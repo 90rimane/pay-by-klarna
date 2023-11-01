@@ -1,0 +1,31 @@
+{
+    "purchase_country": "SE",
+    "purchase_currency": "SEK",
+    "locale": "sv-SE",
+    "order_amount": 20000,
+    "order_tax_amount": 0,
+    "order_lines": [
+        {
+            "name": "Travel One",
+            "quantity": 2,
+            "unit_price": 5000,
+            "tax_rate": 0,
+            "total_amount": 10000,
+            "total_discount_amount": 0,
+            "total_tax_amount": 0,
+            "product_url": "https://www.estore.com/products/f2a8d7e34",
+            "image_url": "https://www.estore.com/product_image.png"
+        },
+        {
+            "name": "Travel One",
+            "quantity": 1,
+            "unit_price": 10000,
+            "tax_rate": 0,
+            "total_amount": 10000,
+            "total_discount_amount": 0,
+            "total_tax_amount": 0,
+            "product_url": "https://www.estore.com/products/f2a8d7e34",
+            "image_url": "https://www.estore.com/product_image.png"
+        }
+    ]
+}

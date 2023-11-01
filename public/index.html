@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#449194">
+    <meta name="description" content="شرکت خدمات گردشگری تِراوِل وان (سفرِ اول) خدمات سفر از قبیل رزرو پرواز، قطار ، هتل و اجاره خودرو درسراسر جهان و همچنین ویزا ورود به ایران را به مشتریان ارائه می دهد">
+    <title>Travel One Payments page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://x.klarnacdn.net/kp/lib/v1/api.js"
+      async
+    ></script>
+    <script src="script.js" defer></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-top">
+          <li class="header-top-items">
+            <a class="item-link" href="#">
+              <h2>Travel One</h2>
+                <p>Here you are going</a></p>
+                <p>to pay your billing</p>
+            </a>
+          </li>
+          <li class="header-top-items">
+            <a class="item-link" href="#"
+              ><img
+                class="item-img"
+                src="https://travel.onecode.se/assets/images/One-travel.png"
+                alt="trvel one logo"
+            /></a>
+          </li>
+          <li class="header-top-items">
+            <a class="item-link" href="#"> <button>Contact us</button></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="whatsapp-contact">
+      <a href="https://wa.me/+46760202522" target="_blank">
+        <img src="https://travel.onecode.se/assets/images/callme-whatsapp.png" id="#whatsapp-img" alt="Call-me-WhatsApp">
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="input-section">
+        <label for="amount">Input amount:</label>
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          placeholder="Enter the amount"
+        />
+        <button type="submit">Submit</button>
+      </div>
+
+      <div
+        style="
+          width: 100%;
+          margin: auto;
+          padding-top: 28px;
+          padding-bottom: 28px;
+        "
+      >
+        <img
+          src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg"
+          style="width: 100%; margin: auto"
+        />
+      </div>
+
+      <!-- Klarna container -->
+      <div id="klarna_container" style="width: 100%; margin: auto"></div>
+      <div style="width: 100%; margin: auto">
+        <!-- Button to trigger authorize call -->
+        <button
+          class="authorize"
+          style="width: 100%; height: auto; margin: auto"
+        >
+          PAY
+        </button>
+      </div>
+
+      <div class="result" style="display: none">
+        <h3>Order Confirmed!</h3>
+        <p>Name: <span id="customerName"></span></p>
+        <p>Order ID: <span id="orderId"></span></p>
+        <p>Total Amount Paid: <span id="totalAmount"></span> SEK</p>
+      </div>
+    </div>
+
+      <footer class="footer">
+
+        <div class="footer-top">
+          <div class="footer-container">
+
+            <div class="footer-brand">
+
+              <a href="#" class="logo">
+                <img class="item-img" src="https://travel.onecode.se/assets/images/One-travel.png" alt="Travel One logo">
+              </a>
+
+              <p class="footer-text" id="text64">
+                Travel One är en resebyrå som ger resetjänster, turist och
+                bokningsservice till dig som ska läsa värdens bok!
+              </p>
+              <p style="text-align: right;">تروال وان شرکت خدمات مسافرتی است که در سوئد و شهر
+                 استکهلم مشغول به فعالیت است. این شرکت به کلیه گردشگران  و عللاقمند
+                 سفر، خدمات سفر از قبیل هتل، پرواز، ویزا و تور ارائه می دهد
+              </p>
+              <p style="text-align: right;">با ما همراه باشید</p>
+            </div>
+
+            <div class="footer-contact">
+
+              <h4 class="contact-title">Kontakta oss</h4>
+
+              <p class="contact-text" id="text66">
+                Vi svarar gärna på dina frågor via telefon och mejl.
+              </p>
+
+              <ul class="footer-list">
+                <li class="contact-item">
+                  <p><ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline"></ion-icon> 0760202522</p>
+                </li>
+                <li class="contact-item">
+
+                  <p><ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon> travel@onecode.se</p>
+                </li>
+                <li class="contact-item">
+
+                  <address id="text69"><ion-icon name="location-outline" role="img" class="md hydrated" aria-label="location outline"></ion-icon> Stockholm, Sweden</address>
+                </li>
+                <li class="contact-item">
+                  <p class="contact-link"> <ion-icon name="business-outline" role="img" class="md hydrated" aria-label="business outline"></ion-icon> En del av One code AB</p>
+                </li>
+                <li class="contact-item">
+                  <p class="contact-link"> <ion-icon name="bag-check-outline" role="img" class="md hydrated" aria-label="bag check outline"></ion-icon> Vat.Nr SE559442910101</p>
+                </li>
+                <li class="contact-item">
+
+                  <p class="contact-link">                  <ion-icon name="cash-outline" role="img" class="md hydrated" aria-label="cash outline"></ion-icon> Bankgiro: 230-6975</p>
+                </li>
+
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="cooperation-companies">
+          <img class="coop" src="https://travel.onecode.se/assets/images/seb-logo.jpg" alt="seb-logo">
+          <img class="coop" src="https://travel.onecode.se/assets/images/klarna-logo.jpg" alt="klarna-logo">
+          <img class="coop" src="https://travel.onecode.se/assets/images/swish-logo.jpg" alt="swish-logo">
+          <img class="coop" src="https://travel.onecode.se/assets/images/onecode-logo.jpg" alt="onecode-logo">
+        </div>
+        <div class="footer-bottom">
+
+            <p class="copyright" id="text74">
+              Copyright © 2023 Travel One
+
+            </p>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>
