@@ -15,13 +15,18 @@ app.use(express.static("public"));
 // Parse JSON bodies
 app.use(bodyParser.json());
 
-// Klarna API credentials
-const klarnaCredentials = {
-  username: "K6738509_a8dc33e4db35",
-  password: "jVQolEKIxg3ygWED",
-};
+// // Klarna Real API credentials
+// const klarnaCredentials = {
+//   username: "K6738509_a8dc33e4db35",
+//   password: "jVQolEKIxg3ygWED",
+// };
+// const klarnaApiUrl = "https://api.klarna.com";
 
-const klarnaApiUrl = "https://api.klarna.com";
+const klarnaCredentials = {
+  username: 'PK133431_6aea19f53b6f',
+  password: 'qOTr0DD72ENxq5nu',
+};
+const klarnaApiUrl = 'https://api.playground.klarna.com';
 
 // Route to create Klarna session
 app.post("/create-session", async (req, res) => {
